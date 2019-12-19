@@ -43,6 +43,14 @@ Testing  :
 4. server.js
 
 5. run node index.js
+   + http://localhost:4000
    + listen Linda ✅
+
+6. Jason? 
+   + npm init -y
+   + scripts
+      + server
+      + start
+   + listen Linda ✅ 
 
 */
