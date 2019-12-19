@@ -30,4 +30,19 @@ Testing  :
 
 - automated unit tests for core business logic.
 
+
+
+///////////////// Work ///////////////
+1. yarn 
+
+2. yarn add express
+
+3. index.js
+   + listen Linda
+
+4. server.js
+
+5. run node index.js
+   + listen Linda ✅
+
 */
