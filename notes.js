@@ -53,4 +53,22 @@ Testing  :
       + start
    + listen Linda ✅ 
 
+7. CREATED , dir : food 
+      + food/food-routes.js
+         + added api boilerplate
+      + updated server.js with routes
+   
+📌 TOMORROW:
+- Food Router 
+- Food Model
+(do everything I know regarding these)
+
+
+/--------------------------/
+Side Notes:
+/--------------------------/
+
+- MOVED server.js to api dir
+
+
 */
