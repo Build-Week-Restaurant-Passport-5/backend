@@ -58,10 +58,26 @@ Testing  :
          + added api boilerplate
       + updated server.js with routes
    
-📌 TOMORROW:
+8.
 - Food Router 
 - Food Model
 (do everything I know regarding these)
+
+- data > dbConfig.js
+
+- food-model.js
+- food-routes.js
+
+- Stopping to design the design schema for my thought process
+
+
+DB schema: 
+https://www.figma.com/file/SgBV7eLTJ6pU38zmOxEyes/restaurant_passport?node-id=0%3A1
+
+DB tables:
+https://docs.google.com/document/d/1gWqM-vuZZ0Rx_6iSUWxVMsiOQYoSRnnpuDd4qtgvn_4/edit?usp=sharing
+
+
 
 
 /--------------------------/
