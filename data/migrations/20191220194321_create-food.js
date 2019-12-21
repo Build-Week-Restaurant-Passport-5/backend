@@ -9,7 +9,7 @@ exports.up = function(knex) {
         .unique();
       user.string("password").notNullable();
       user.string("name").notNullable();
-      user.string("city").notNullable();
+      user.string("city");
       user.string("email").notNullable();
     })
 
@@ -21,7 +21,7 @@ exports.up = function(knex) {
       yum.string("zipcode");
       yum.string("phoneNumber");
       yum.string("websiteURL");
-      yum.integer("myRating").notNullable();
+      yum.integer("myRating");
       yum.text("notes");
       yum
         .boolean("stamped")
