@@ -1,5 +1,9 @@
 const knex = require('knex');
 
-const knexConfig = require('../knexfile.js');
+const config = require('../knexfile.js');
 
-module.exports = knex(knexConfig.development);
+// we must select the development object from our knexfile
+const db = knex(config.development);
+
+// export for use in codebase
+module.exports = db;

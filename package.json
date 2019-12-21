@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/Build-Week-Restaurant-Passport-5/backend/issues"
   },
-  "homepage": "https://github.com/Build-Week-Restaurant-Passport-5/backend#readme"
+  "homepage": "https://github.com/Build-Week-Restaurant-Passport-5/backend#readme",
+  "dependencies": {
+    "knex": "^0.20.4",
+    "sqlite3": "^4.1.1"
+  }
 }

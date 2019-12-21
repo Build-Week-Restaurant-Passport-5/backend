@@ -1,6 +1,6 @@
 /*
 
-Day 1: 
+///////////////// Phase 1 ///////////////
 
 Thought Dump.
 
@@ -32,7 +32,11 @@ Testing  :
 
 
 
-///////////////// Work ///////////////
+
+
+
+
+///////////////// Phase 2 ///////////////
 1. yarn 
 
 2. yarn add express
@@ -76,6 +80,34 @@ https://www.figma.com/file/SgBV7eLTJ6pU38zmOxEyes/restaurant_passport?node-id=0%
 
 DB tables:
 https://docs.google.com/document/d/1gWqM-vuZZ0Rx_6iSUWxVMsiOQYoSRnnpuDd4qtgvn_4/edit?usp=sharing
+
+alright planning done.
+
+
+
+
+
+
+
+///////////////// Phase 3 ///////////////
+
+Database Schema 
+
+- npm install -g knex
+- npm install knex sqlite3
+- knex init
+   + modified knexfile.js
+   + verified data in > dbConfig.js
+- knex migrate:make create-food
+   + create the tables
+   + confirmed tables show in SQLite Studio
+- Seeds
+   + knex seed:make 001-food
+   + sample data shows in SQLite Studio
+
+...So when API is setup, I can test that user can see its restaurants, so I'll have to go back in and add a foreign key to the migration.
+
+...For now we know the database is setup, dummy data showing in sqlite.
 
 
 
