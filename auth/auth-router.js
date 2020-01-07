@@ -1,3 +1,12 @@
+/* Can:
+    - create
+    - register 
+    
+an authenticated account as a `passportHolder`
+ */
+
+
+
 const router = require("express").Router();
 const bcrypt = require("bcryptjs");
 const authorize = require('./authenticate-middleware.js');

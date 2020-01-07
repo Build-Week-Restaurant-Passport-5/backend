@@ -1,10 +1,10 @@
 
 exports.seed = function(knex) {
   // Deletes ALL existing entries
-  return knex('restaurants').del()
+  return knex('restaurants_table').del()
     .then(function () {
       // Inserts seed entries
-      return knex('restaurants').insert([
+      return knex('restaurants_table').insert([
        {
         restaurantName: "Dao Kitchen",
         streetAddress: "34455 N 27th Dr",

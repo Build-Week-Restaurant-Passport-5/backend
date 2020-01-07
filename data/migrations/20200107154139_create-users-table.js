@@ -1,7 +1,26 @@
+/* * 
+
+REGISTRATION:
+
+unique `username` - String
+
+* strong `password` - String
+
+* a `name` - String
+
+* a valid `city` - String
+
+* a valid and unique `email` - String
+
+ */
+
+
+ 
+
 exports.up = function(knex) {
   return knex.schema
 
-    .createTable("users", user => {
+    .createTable("users_table", user => {
       user.increments();
       user
         .string("username", 128)
@@ -13,7 +32,7 @@ exports.up = function(knex) {
       user.string("email").notNullable();
     })
 
-    .createTable("restaurants", restaurant => {
+    .createTable("restaurants_table", restaurant => {
       restaurant.increments();
       restaurant.string("restaurantName").notNullable();
       restaurant.string("streetAddress");
