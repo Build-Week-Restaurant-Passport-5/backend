@@ -60,6 +60,17 @@ exports.up = function(knex) {
 
     .createTable("restaurants_table", restaurant => {
       restaurant.increments();
+
+      restaurant
+      .integer("user_id")
+      .unsigned()
+      .notNullable()
+      .references("id")
+      .inTable('users_table')
+      .onDelete("CASCADE")
+      .onUpdate("CASCADE");
+
+
       restaurant.string("restaurantName").notNullable();
       restaurant.string("streetAddress");
       restaurant.string("city");

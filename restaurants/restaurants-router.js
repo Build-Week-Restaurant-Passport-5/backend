@@ -15,5 +15,28 @@ Can:
 
 */
 
+const express = require("express");
+
+const Restaurants = require("../restaurants/restaurants-model.js");
+
+const router = express.Router();
+
+
+server.get('/hobbits', (req, res) => {
+   
+ });
+ 
+ server.post('/hobbits', (req, res) => {
+ 
+ }) 
+ 
+ server.put('/hobbits', (req, res) => {
+    res.status(200).json({url: '/hobbits', operation: 'PUT'});
+ }) 
+ 
+ server.delete('/hobbits', (req, res) => {
+    res.status(204);
+ }); 
+
 
 

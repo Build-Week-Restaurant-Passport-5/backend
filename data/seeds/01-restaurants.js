@@ -47,11 +47,12 @@ BEEN THERE RESTAURANTS:
 
 exports.seed = function(knex) {
   // Deletes ALL existing entries
-  return knex('restaurants_table').truncate()
+  return knex('restaurants_table').del()
     .then(function () {
       // Inserts seed entries
       return knex('restaurants_table').insert([
        {
+        user_id: 1, 
         restaurantName: "Dao Kitchen",
         streetAddress: "34455 N 27th Dr",
         city: "Phoenix",

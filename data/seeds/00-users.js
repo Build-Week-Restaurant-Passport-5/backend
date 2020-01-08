@@ -7,10 +7,14 @@ exports.seed = function(knex) {
       return knex('users_table').insert([
 
         {
-          id: 1
+         username: "jashele",
+         password: "hello",
+         name: "jashele",
+         city: "phoenix",
+         email: "email@hey.org"
         }
 
-        
+
       ]);
     });
 };
