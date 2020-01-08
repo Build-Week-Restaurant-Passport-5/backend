@@ -13,30 +13,37 @@ Can:
 `beenThere` restaurants from a `passport` (a list of all restaurants that they have visited) 
 
 
+
+ find,
+ findById,
+ create,
+ remove
+
 */
 
-const express = require("express");
+const router = require('express').Router();
 
-const Restaurants = require("../restaurants/restaurants-model.js");
+const Restaurants = require('./users-model.js');
 
-const router = express.Router();
-
-
-server.get('/hobbits', (req, res) => {
-   
- });
- 
- server.post('/hobbits', (req, res) => {
- 
- }) 
- 
- server.put('/hobbits', (req, res) => {
-    res.status(200).json({url: '/hobbits', operation: 'PUT'});
- }) 
- 
- server.delete('/hobbits', (req, res) => {
-    res.status(204);
- }); 
+// const restricted = require('../auth/authenticate-middleware.js');
 
 
+router.find("/", (req, res) => {
 
+});
+
+router.findById("/", (req, res) => {
+
+});
+
+router.create("/", (req, res) => {
+
+});
+
+router.put("/", (req, res) => {
+
+});
+
+router.remove("/", (req, res) => {
+
+});
