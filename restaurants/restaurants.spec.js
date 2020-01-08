@@ -20,7 +20,7 @@ describe("Restaurants -create ", () => {
   
           // declare another new restaurant
       const newRestaurant2 = await Restaurants.create({
-        user_id: 1,
+        user_id: 2,
         restaurantName: "salad 2 go",
         stamped: false
       });
@@ -36,3 +36,32 @@ describe("Restaurants -create ", () => {
       expect(newRestaurant2.restaurantName).toBe("salad 2 go");
     });
   });
+
+
+  // Test for the find
+ describe("restaurants -find", () => {
+    it('find all restaurants', async () => {
+      const foodItem = await Restaurants.find()
+  
+      expect(foodItem).toHaveLength(2)
+    })
+   })
+
+
+    // Test for the findById
+ describe("Restaurants -findById", () => {
+    it('find restaurant by id', async () => {
+       const foodieItem = await Restaurants.findById(1)
+   
+       expect(foodieItem.restaurantName).toBe('burger king')
+     })
+   })
+
+
+    // Test for the remove (delete)
+describe("Restaurants -remove", () => {
+    it('remove an app', async () => {
+      const restaurantList = await Restaurants.remove(1)
+      expect(restaurantList).toHaveLength(1)
+    })
+  })
