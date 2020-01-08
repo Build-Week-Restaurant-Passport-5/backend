@@ -4,6 +4,7 @@ module.exports = {
  find,
  findById,
  create,
+ update,
  remove
 };
 
@@ -23,6 +24,14 @@ function create(restaurant) {
              const [id] = ids;
              return findById(id)
          }) 
+}
+
+
+function update(id, changes) {
+  return db('restaurants_table')
+    .where('id', id)
+    .update(changes)
+    .then(count => (count > 0 ? this.get(id) : null));
 }
 
 
