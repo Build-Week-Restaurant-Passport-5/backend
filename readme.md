@@ -5,12 +5,15 @@ A home for all your foodie aspirations.
 
 # API Documentation
 
+<br />
+
 ## Authorization Routes
 
 |   Table   |   Method  |  Endpoint | Description   |
 |   -----   |   ------  |   ------  |   ------- |
-|   **users_table**   |   POST  |   **/auth/login**    |   Registers a new user.   | 
 |   **users_table**   |   POST   |    **/auth/register**    |   Logs in already registered user.   |
+|   **users_table**   |   POST  |   **/auth/login**    |   Registers a new user.   | 
+
 
 
 <br /><br />
@@ -56,7 +59,7 @@ A home for all your foodie aspirations.
 ```
     {
          username: "love2eat19",
-         password: "json245",
+         password: "json245"
         }
 ```
 
@@ -65,14 +68,5 @@ A home for all your foodie aspirations.
 
 
 
-## Restaurant Routes
 
-|   Table   |   Method  |  Endpoint | Description   |
-|   -----   |   ------  |   ------  |   ------- |
-|   **users_table**   |   POST  |   **/auth/login**    |   Registers a new user.   | 
-|   **users_table**   |   POST   |    **/auth/register**    |   Logs in already registered user.   |
-
-
-<br /><br />
-
-
+Restaurants
