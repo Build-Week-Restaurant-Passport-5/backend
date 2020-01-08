@@ -55,6 +55,8 @@ A home for all your foodie aspirations.
 |   `password`   |   String  |   **Yes**    |             | 
 
 
+<br />
+
 **Example:**
 ```
     {
@@ -69,4 +71,3 @@ A home for all your foodie aspirations.
 
 
 
-Restaurants
