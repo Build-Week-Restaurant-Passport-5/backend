@@ -17,6 +17,7 @@
     "debug": "^2.6.9",
     "depd": "^1.1.2",
     "destroy": "^1.0.4",
+    "dotenv": "^8.2.0",
     "ee-first": "^1.1.1",
     "encodeurl": "^1.0.2",
     "escape-html": "^1.0.3",
@@ -60,10 +61,17 @@
     "utils-merge": "^1.0.1",
     "vary": "^1.1.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "cross-env": "^6.0.3",
+    "supertest": "^4.0.2"
+  },
   "scripts": {
     "server": "nodemon index.js",
+    "test": "cross-env DB_ENV=testing jest --watch --verbose",
     "start": "node index.js"
+  },
+  "jest": {
+    "testEnvirnoment": "node"
   },
   "repository": {
     "type": "git",
