@@ -62,8 +62,10 @@ router.get("/:id", (req, res) => {
     });
 });
 
-router.post("/", (req, res) => {
-  Restaurant.create(req.body)
+router.post("/:id", (req, res) => {
+  const theID = req.params.id; 
+
+  Restaurants.create({...req.body, user_id: theID})
     .then(restaurant => {
       res.status(201).json(restaurant);
     })
@@ -75,7 +77,7 @@ router.post("/", (req, res) => {
 });
 
 router.put("/:id", (req, res) => {
-  Restaurant.update(req.params.id, req.body)
+  Restaurants.update(req.params.id, req.body)
     .then(update => {
       res.status(200).json(update);
     })
@@ -85,7 +87,7 @@ router.put("/:id", (req, res) => {
 });
 
 router.delete("/:id", (req, res) => {
-  db.remove(req.params.id)
+  Restaurants.remove(req.params.id)
     .then(deleted => {
       res.status(200).json(deleted);
     })
@@ -93,3 +95,5 @@ router.delete("/:id", (req, res) => {
       res.status(500).json({ message: "Error deleting item", err });
     });
 });
+
+module.exports = router; 

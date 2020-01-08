@@ -19,7 +19,7 @@ function findById(id) {
 
 
 function create(restaurant) {
-  return db('restaurants_table').create(restaurant)
+  return db('restaurants_table').insert(restaurant)
          .then(ids => {
              const [id] = ids;
              return findById(id)
@@ -31,7 +31,7 @@ function update(id, changes) {
   return db('restaurants_table')
     .where('id', id)
     .update(changes)
-    .then(count => (count > 0 ? this.get(id) : null));
+    .then(count => (count > 0 ? findById(id) : null));
 }
 
 

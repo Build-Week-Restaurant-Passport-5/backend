@@ -63,8 +63,8 @@ exports.up = function(knex) {
 
       restaurant
       .integer("user_id")
-      .unsigned()
       .notNullable()
+      .unsigned()
       .references("id")
       .inTable('users_table')
       .onDelete("CASCADE")
