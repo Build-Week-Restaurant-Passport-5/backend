@@ -1,10 +1,10 @@
 const server = require("./server.js");
 const request = require("supertest");
 
-// describe("server.js", () => {
-//   test("verify testing environment", () => {
-//     expect(process.env.DB_ENV).toBe("testing");
-//   });
+describe("server.js", () => {
+  test("verify testing environment", () => {
+    expect(process.env.DB_ENV).toBe("testing");
+  });
 
 describe("GET /", () => {
   it("should return status 200", async () => {
@@ -16,4 +16,5 @@ describe("GET /", () => {
     const response = await request(server).get("/");
     expect(response.type).toEqual("text/html");
   });
+});
 });
