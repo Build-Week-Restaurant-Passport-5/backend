@@ -7,12 +7,12 @@ describe("server.js", () => {
   });
 
 describe("GET /", () => {
-  it("should return status 200", async () => {
+  it("return status 200", async () => {
     const res = await request(server).get("/");
     expect(res.status).toBe(200);
   });
 
-  it("should return a JSON object fron the index route", async () => {
+  it("return text/html", async () => {
     const response = await request(server).get("/");
     expect(response.type).toEqual("text/html");
   });
