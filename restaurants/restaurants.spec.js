@@ -1,9 +1,4 @@
-// require statements
-
-// require db
 const db = require("../data/dbConfig");
-
-// require Restaurants
 const Restaurants = require("./restaurants-model.js");
 
 // describe 1
@@ -13,7 +8,7 @@ describe("Restaurants -create ", () => {
   
       // declare a new restaurant
       const newRestaurant = await Restaurants.create({
-          user_id: 1, 
+          user_id: 2, 
         restaurantName: "burger king",
         stamped: false
       });
@@ -51,17 +46,17 @@ describe("Restaurants -create ", () => {
     // Test for the findById
  describe("Restaurants -findById", () => {
     it('find restaurant by id', async () => {
-       const foodieItem = await Restaurants.findById(1)
+       const foodieItem = await Restaurants.findById(2)
    
-       expect(foodieItem.restaurantName).toBe('burger king')
+       expect(foodieItem.restaurantName).toBe('salad 2 go')
      })
    })
 
 
-    // Test for the remove (delete)
-describe("Restaurants -remove", () => {
-    it('remove an app', async () => {
-      const restaurantList = await Restaurants.remove(1)
-      expect(restaurantList).toHaveLength(1)
-    })
-  })
+//     // Test for the remove (delete)
+// describe("Restaurants -remove", () => {
+//     it('remove an app', async () => {
+//       const restaurantList = await Restaurants.remove(1)
+//       expect(restaurantList).toHaveLength(1)
+//     })
+//   })
