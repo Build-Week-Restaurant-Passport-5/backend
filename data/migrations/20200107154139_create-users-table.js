@@ -1,6 +1,8 @@
 /* * 
 
-REGISTRATION:
+--------------------------------------
+USER REGISTRATION:
+--------------------------------------
 
 unique `username` - String
 
@@ -12,10 +14,34 @@ unique `username` - String
 
 * a valid and unique `email` - String
 
+
+
+--------------------------------------
+BEEN THERE RESTAURANTS:
+--------------------------------------
+
+* `restaurantName` - String
+
+* `streetAddress` - String
+
+* `city` - String
+
+* `zipcode` - String
+
+* `phoneNumber` - String
+
+* `websiteURL` - String/URL
+
+* `myRating` (1 thru 5) - Int
+
+* `notes` - String
+
+* `stamped` - Boolean
+
  */
 
 
- 
+
 
 exports.up = function(knex) {
   return knex.schema
@@ -51,6 +77,6 @@ exports.up = function(knex) {
 
 exports.down = function(knex) {
   return knex.schema
-  .dropTableIfExists("food")
-  .dropTableIfExists("users");
+  .dropTableIfExists("restaurants_table")
+  .dropTableIfExists("users_table");
 };

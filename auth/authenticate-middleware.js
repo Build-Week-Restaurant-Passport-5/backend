@@ -4,7 +4,7 @@ const bcrypt = require('bcryptjs');
 
 module.exports = (req, res, next) => {
     // look for the credentials
-    const { username, password } = req.headers
+    const { username, password } = req.body
     // validate that they exist ... we didn't have this part in class...
     if (!(username && password)) {
         res.status(401).json({ message: "invalid credentials" });

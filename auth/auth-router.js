@@ -1,8 +1,16 @@
-/* Can:
+/* 
+
+--------------------------------------
+NON-EXISTING USER CAN:
+--------------------------------------
+
+Can:
     - create
     - register 
     
 an authenticated account as a `passportHolder`
+
+
  */
 
 
@@ -15,7 +23,6 @@ const secrets = require("../config/secrets");
 
 const Users = require("../users/users-model.js");
 
-// const authorize = require("./authenticate-middleware.js");
 
 router.post("/register", (req, res) => {
   let user = req.body;
@@ -32,16 +39,18 @@ router.post("/register", (req, res) => {
     })
 
     .catch(error => {
+      console.log(req.body)
       res.status(500).json(error);
     });
 });
 
 router.post("/login", authorize, (req, res) => {
   let { username, password } = req.body;
-
+ 
   Users.findBy({ username })
     .first()
     .then(user => {
+      console.log(user)
       if (user && bcrypt.compareSync(password, user.password)) {
         ///////// token   /////////
         const token = genToken(user);
@@ -49,14 +58,18 @@ router.post("/login", authorize, (req, res) => {
         res.status(200).json({
           username: user.username,
           token: token
+     
         });
       } else {
         res.status(401).json({
+        
           message: "Invalid Credentials"
+         
         });
       }
     })
     .catch(error => {
+ 
       res.status(500).json(error);
     });
 });

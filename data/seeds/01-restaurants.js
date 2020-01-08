@@ -1,7 +1,53 @@
+/* 
+
+
+--------------------------------------
+USER REGISTRATION:
+--------------------------------------
+
+unique `username` - String
+
+* strong `password` - String
+
+* a `name` - String
+
+* a valid `city` - String
+
+* a valid and unique `email` - String
+
+
+
+
+
+
+--------------------------------------
+BEEN THERE RESTAURANTS:
+--------------------------------------
+
+* `restaurantName` - String
+
+* `streetAddress` - String
+
+* `city` - String
+
+* `zipcode` - String
+
+* `phoneNumber` - String
+
+* `websiteURL` - String/URL
+
+* `myRating` (1 thru 5) - Int
+
+* `notes` - String
+
+* `stamped` - Boolean
+
+ */ 
+
 
 exports.seed = function(knex) {
   // Deletes ALL existing entries
-  return knex('restaurants_table').del()
+  return knex('restaurants_table').truncate()
     .then(function () {
       // Inserts seed entries
       return knex('restaurants_table').insert([
