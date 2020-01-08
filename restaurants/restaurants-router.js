@@ -30,9 +30,10 @@ remove
 
 const router = require("express").Router();
 
-const Restaurants = require("./users-model.js");
+const Restaurants = require("../restaurants/restaurants-model.js");
 
-// const restricted = require('../auth/authenticate-middleware.js');
+
+
 
 router.get("/", (req, res) => {
   Restaurants.find()
