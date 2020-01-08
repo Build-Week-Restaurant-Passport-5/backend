@@ -11,8 +11,8 @@ A home for all your foodie aspirations.
 
 |   Table   |   Method  |  Endpoint | Description   |
 |   -----   |   ------  |   ------  |   ------- |
-|   **users_table**   |   POST   |    **/auth/register**    |   Logs in already registered user.   |
-|   **users_table**   |   POST  |   **/auth/login**    |   Registers a new user.   | 
+|   **users_table**   |   POST   |    **/auth/register**    |   Registers a new user.   |
+|   **users_table**   |   POST  |   **/auth/login**    |   Logs in already registered user.   | 
 
 
 
