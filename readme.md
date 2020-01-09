@@ -1,13 +1,29 @@
 # Restaurant Passport 
-A home for all your foodie aspirations.
+## A home for all your foodie aspirations.
 
-<br /><br />
+
+
+### Navigation: 
+- [Auth Routes](https://github.com/Build-Week-Restaurant-Passport-5/backend#authorization-routes "Auth Routes")
+    - [Register](https://github.com/Build-Week-Restaurant-Passport-5/backend#register "Register")
+    - [Login](https://github.com/Build-Week-Restaurant-Passport-5/backend#login "Login")
+
+
+
+- [Authenticated User](https://github.com/Build-Week-Restaurant-Passport-5/backend#restaurant-routes "Authenticated User")
+- [Status Codes](https://github.com/Build-Week-Restaurant-Passport-5/backend#status-codes "Status Codes")
+- [Content Info](https://github.com/Build-Week-Restaurant-Passport-5/backend#content "Content Info")
+
+
+
+
+<br />
 
 # API Documentation
 
 <br />
 
-## Authorization Routes
+## Auth Routes
 
 |   Table   |   Method  |  Endpoint | Description   |
 |   -----   |   ------  |   ------  |   ------- |
@@ -49,10 +65,10 @@ A home for all your foodie aspirations.
 ## Login
 ### Request Body
 
-|   Name   |   Type  |  Required | Description   |
-|   -----   |   ------  |   ------  |   ------- |
-|   `username`   |   String  |   **Yes**    |   Must be Unique.   | 
-|   `password`   |   String  |   **Yes**    |             | 
+|   Name   |   Type  |  Required | 
+|   -----   |   ------  |   ------  |   
+|   `username`   |   String  |   **Yes**    |   
+|   `password`   |   String  |   **Yes**    |             
 
 
 <br /><br />
@@ -70,7 +86,7 @@ A home for all your foodie aspirations.
 <hr />
 <br /><br />
 
-## Restaurant Routes
+## Authenticated User
 
 |   Table   |   Method  |  Endpoint | Description   |
 |   -----   |   ------  |   ------  |   ------- |
@@ -84,7 +100,7 @@ A home for all your foodie aspirations.
 <br /><br />
 
 
-## Authenticated Passport Holder
+
 ### Request Body
 
 |   Name   |   Type  |  Required | Description   |
@@ -107,21 +123,13 @@ A home for all your foodie aspirations.
 ```
        {
         restaurantName: "Pappadeaux",
-
         streetAddress: "34455 N Black Canyon Hwy",
-
         city: "Tuscon",
-
         zipcode: "00000",
-
         phoneNumber: "(000) 111-0000",
-
         websiteURL: "http://yumyumyum.com",
-
         myRating: "5",
-
         notes: "Good food.",
-
         stamped: true,
        }
 ```
