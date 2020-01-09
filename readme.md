@@ -4,13 +4,13 @@
 
 
 ### Navigation: 
-- [Auth Routes](https://github.com/Build-Week-Restaurant-Passport-5/backend#authorization-routes "Auth Routes")
+- [Auth Routes](https://github.com/Build-Week-Restaurant-Passport-5/backend#auth-routes "Auth Routes")
     - [Register](https://github.com/Build-Week-Restaurant-Passport-5/backend#register "Register")
     - [Login](https://github.com/Build-Week-Restaurant-Passport-5/backend#login "Login")
 
 
 
-- [Authenticated User](https://github.com/Build-Week-Restaurant-Passport-5/backend#restaurant-routes "Authenticated User")
+- [Authenticated User](https://github.com/Build-Week-Restaurant-Passport-5/backend#authenticated-user "Authenticated User")
 - [Status Codes](https://github.com/Build-Week-Restaurant-Passport-5/backend#status-codes "Status Codes")
 - [Content Info](https://github.com/Build-Week-Restaurant-Passport-5/backend#content "Content Info")
 
