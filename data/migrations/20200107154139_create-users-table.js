@@ -78,7 +78,7 @@ exports.up = function(knex) {
       restaurant.string("phoneNumber");
       restaurant.string("websiteURL");
       restaurant.integer("myRating");
-      restaurant.text("notes");
+      restaurant.string("notes");
       restaurant
         .boolean("stamped")
         .notNullable()
