@@ -6,15 +6,15 @@ describe("server.js", () => {
     expect(process.env.DB_ENV).toBe("testing");
   });
 
-describe("GET /", () => {
-  it("return status 200", async () => {
-    const res = await request(server).get("/");
-    expect(res.status).toBe(200);
-  });
+  describe("GET /", () => {
+    it("return status 200", async () => {
+      const res = await request(server).get("/");
+      expect(res.status).toBe(200);
+    });
 
-  it("return text/html", async () => {
-    const response = await request(server).get("/");
-    expect(response.type).toEqual("text/html");
+    it("return text/html", async () => {
+      const response = await request(server).get("/");
+      expect(response.type).toEqual("text/html");
+    });
   });
-});
 });

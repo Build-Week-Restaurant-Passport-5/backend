@@ -2,21 +2,19 @@
 
 - prevent access to endpoints that should not be public
 
-
 ## User
 
 ```
 Can:
     - create
-    - register 
-    
+    - register
+
 an authenticated account as a `passportHolder`
 ```
 
 <br />
 
-
-### Registration: 
+### Registration:
 
 ```
 * unique `username` - String
@@ -30,11 +28,9 @@ an authenticated account as a `passportHolder`
 * a valid and unique `email` - String
 ```
 
-
 <hr>
 <br />
 <br />
-
 
 ## Authenticated `passportHolder`:
 
@@ -42,13 +38,12 @@ an authenticated account as a `passportHolder`
 Can:
     - read
     - update
-    - delete 
+    - delete
 
 `beenThere` restaurants from a `passport` (a list of all restaurants that they have visited)
 ```
 
 <br />
-
 
 ### "Been There" info:
 
@@ -71,5 +66,3 @@ Can:
 
 * `stamped` - Boolean
 ```
-
-

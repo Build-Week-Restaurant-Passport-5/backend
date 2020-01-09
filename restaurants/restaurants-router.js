@@ -32,9 +32,6 @@ const router = require("express").Router();
 
 const Restaurants = require("../restaurants/restaurants-model.js");
 
-
-
-
 router.get("/", (req, res) => {
   Restaurants.find()
     .then(restaurants => {
@@ -63,9 +60,9 @@ router.get("/:id", (req, res) => {
 });
 
 router.post("/:id", (req, res) => {
-  const theID = req.params.id; 
+  const theID = req.params.id;
 
-  Restaurants.create({...req.body, user_id: theID})
+  Restaurants.create({ ...req.body, user_id: theID })
     .then(restaurant => {
       res.status(201).json(restaurant);
     })
@@ -96,4 +93,4 @@ router.delete("/:id", (req, res) => {
     });
 });
 
-module.exports = router; 
+module.exports = router;

@@ -40,9 +40,6 @@ BEEN THERE RESTAURANTS:
 
  */
 
-
-
-
 exports.up = function(knex) {
   return knex.schema
 
@@ -62,14 +59,13 @@ exports.up = function(knex) {
       restaurant.increments();
 
       restaurant
-      .integer("user_id")
-      .notNullable()
-      .unsigned()
-      .references("id")
-      .inTable('users_table')
-      .onDelete("CASCADE")
-      .onUpdate("CASCADE");
-
+        .integer("user_id")
+        .notNullable()
+        .unsigned()
+        .references("id")
+        .inTable("users_table")
+        .onDelete("CASCADE")
+        .onUpdate("CASCADE");
 
       restaurant.string("restaurantName").notNullable();
       restaurant.string("streetAddress");
@@ -88,6 +84,6 @@ exports.up = function(knex) {
 
 exports.down = function(knex) {
   return knex.schema
-  .dropTableIfExists("restaurants_table")
-  .dropTableIfExists("users_table");
+    .dropTableIfExists("restaurants_table")
+    .dropTableIfExists("users_table");
 };
