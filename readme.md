@@ -92,9 +92,9 @@
 |   -----   |   ------  |   ------  |   ------- |
 |   **restaurants_table**   |   *GET*   |    **/restaurants**    |   Gets list of restaurants   |
 |   **restaurants_table**   |   *GET*   |    **/restaurants/:id**    |   Restaurant by ID.  |
-|   **restaurants_table**   |   *POST*   |    **/restaurants/:id**    |   Post a restaurant for the specific user that is logged in. *(i.e. for an id of 2, would post to user 2)* |
-|   **restaurants_table**   |   *PUT*   |    **/restaurants/:id**    |  Create a new restaurant |
-|   **restaurants_table**   |   *DELETE*   |    **/restaurants/:id**    |  Delete a restaurant |
+|   **restaurants_table**   |   *POST*   |    **/restaurants/:id**    |   Create a new entry for the specific user that is logged in. *(i.e. for an id of 2, would post to user 2)* |
+|   **restaurants_table**   |   *PUT*   |    **/restaurants/:id**    |  Edit an existing entry |
+|   **restaurants_table**   |   *DELETE*   |    **/restaurants/:id**    |  Delete an entry |
 
 
 <br /><br />
