@@ -27,8 +27,8 @@
 
 |   Table   |   Method  |  Endpoint | Description   |
 |   -----   |   ------  |   ------  |   ------- |
-|   **users_table**   |   *POST*   |    **/auth/register**    |   Registers a new user.   |
-|   **users_table**   |   *POST*  |   **/auth/login**    |   Logs in already registered user.   | 
+|   **users_table**   |   *POST*   |    **/api/auth/register**    |   Registers a new user.   |
+|   **users_table**   |   *POST*  |   **/api/auth/login**    |   Logs in already registered user.   | 
 
 
 
@@ -90,11 +90,11 @@
 
 |   Table   |   Method  |  Endpoint | Description   |
 |   -----   |   ------  |   ------  |   ------- |
-|   **restaurants_table**   |   *GET*   |    **/restaurants**    |   Gets list of restaurants   |
-|   **restaurants_table**   |   *GET*   |    **/restaurants/:id**    |   Restaurant by ID.  |
-|   **restaurants_table**   |   *POST*   |    **/restaurants/:id**    |   Create a new entry for the specific user that is logged in. *(i.e. for an id of 2, would post to user 2)* |
-|   **restaurants_table**   |   *PUT*   |    **/restaurants/:id**    |  Edit an existing entry |
-|   **restaurants_table**   |   *DELETE*   |    **/restaurants/:id**    |  Delete an entry |
+|   **restaurants_table**   |   *GET*   |    **/api/restaurants**    |   Gets list of restaurants   |
+|   **restaurants_table**   |   *GET*   |    **/api/restaurants/:id**    |   Restaurant by ID.  |
+|   **restaurants_table**   |   *POST*   |    **/api/restaurants/:id**    |   Create a new entry for the specific user that is logged in. *(i.e. for an id of 2, would post to user 2)* |
+|   **restaurants_table**   |   *PUT*   |    **/api/restaurants/:id**    |  Edit an existing entry |
+|   **restaurants_table**   |   *DELETE*   |    **/api/restaurants/:id**    |  Delete an entry |
 
 
 <br /><br />
