@@ -10,7 +10,7 @@
 
 
 
-- [Authenticated User](https://github.com/Build-Week-Restaurant-Passport-5/backend#authenticated-endpoints "Authenticated User")
+- [Restaurant Endpoints](https://github.com/Build-Week-Restaurant-Passport-5/backend#restaurant-endpoints "Restaurant Endpoints")
 - [Status Codes](https://github.com/Build-Week-Restaurant-Passport-5/backend#status-codes "Status Codes")
 - [Content Info](https://github.com/Build-Week-Restaurant-Passport-5/backend#content "Content Info")
 
